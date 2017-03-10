@@ -21,5 +21,6 @@ from django.views.debug import default_urlconf
 urlpatterns = [
 	url(r'^admin/', admin.site.urls),
 	url(r'^ER2XML/', include('ER2XML.urls')),
+    url(r'', include('blog.urls')),
 	url(r'^$', default_urlconf),
 ]
